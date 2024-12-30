@@ -17,13 +17,13 @@ jobs:
     steps:
     # step 1: Check out the code from the repository
     - name: Check out the code
-      users: actions/checkout@v2
+      uses: actions/checkout@v2
 
     # step2: Set up Python enviroments
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-versions: '3.8'
+        python-version: '3.8'
 
     # step 3: Install dependencies
     - name: Install dependencies
